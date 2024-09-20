@@ -1,5 +1,7 @@
 // Tipos de datos en js
 
+const { isLeafType } = require("graphql");
+
 // 1 Undefined
 console.warn("---Tipo de Dato UNDEFINED(No definido)")
 let cliente;
@@ -164,3 +166,81 @@ else
 console.log("Se comparo nuemro1 con nuemro5, determinando que tienen el mismo valor pero no el mismo tipo de dato")
 
 
+
+console.log("¿Es 5 = \"5.0\?")
+if(numero1 == numero7)
+    console.log("Se comparo numero1 con numero7, determinado que tienen el mismo valor")
+else
+console.log("Se comparo nuemro1 con nuemro7, determinando que tienen el mismo valor pero no el mismo tipo de dato")
+
+console.log("¿Es 5 = \"5.0\?")
+if(numero1 === numero7)
+    console.log("Se comparo numero1 con numero7, determinado que tienen el mismo valor")
+else
+console.log("Se comparo nuemro1 con nuemro7, determinando que tienen el mismo valor pero no el mismo tipo de dato")
+
+
+
+console.log("¿Es 5 = Symbol(5)?")
+if(numero1 == numero9)
+    console.log("Se comparo numero1 con numero9, determinado que tienen el mismo valor")
+else
+console.log("Se comparo nuemro1 con numero9, determinando que tienen el mismo valor pero no el mismo tipo de dato")
+
+console.log("¿Es 5 = \"5\?")
+if(numero1 === numero9)
+    console.log("Se comparo numero1 con numero9, determinado que tienen el mismo valor")
+else
+console.log("Se comparo nuemro1 con numero9, determinando que tienen el mismo valor pero no el mismo tipo de dato")
+
+//9
+
+console.log(`¿Es Symbol(5) === Symbol(5)?, antes de compararlos analizamos que tipo de dato son: siendo numero5 del tipo:
+${typeof(numero5)} y numero6 del tipo: ${typeof(numero6)}`)
+if(numero5 == numero6)
+    console.log("Se comparo numero1 con numero5, determinado que tienen el mismo valor")
+else
+console.log("Se comparo nuemro1 con nuemro5, determinando que tienen el mismo valor pero no el mismo tipo de dato")
+
+console.log("¿Es 5 = \"5\?")
+if(numero5 === numero6)
+    console.log("Se comparo numero1 con numero5, determinado que tienen el mismo valor")
+else
+console.log("Se comparo nuemro1 con nuemro5, determinando que tienen el mismo valor pero no el mismo tipo de dato")
+
+
+//7. NULL
+
+console.warn("---Tipo de Dato - NULL (Nulo o vacio)");
+//El tipo de dato NULL se asigna cuando el sistema o el usuario saben de la variable pero prefienren dejarlo vacio, bajo su consentimiento 
+
+
+let nombreUsuario =null;
+let passUsuario=null;
+let generoUsuario= null;
+let estatusRelacionSentimental=null;
+let fecha_ultimoPost=null;
+
+//supongamos que estamos progracmando una red social, tipo Facebook, en la parte de la informacionse publicara en el perfil del usuario
+
+//si el usuario no ha iniciado sesion en el dispositivo movil o en la aplicacion web, puede explorar el contenido de acceso publico. y no exixtira informacion para msotrar
+
+//En la HU (Historia de Usuario), que el ususario desea logearse debera ingresar su numero telefonico o correo electronico y una contraseña que deberemos guardar en las variables previamente declaradas
+
+//Supongamos que el usuario: Jonathan con correo electronico: 230410@utxicotepec.edu.mx desea ingresar con su contraseña: pas1234
+
+nombreUsuario = "230410@utxicotepec.edu.mx";
+passUsuario = "pas1234";
+
+//en este momento de ejecucion del sistema no sabemos su genero, ni su estatus de relacion sentimantal 
+
+console.loh(`El usuario ${nombreUsuario} enta intentando logearse con una contarseña de: ${passUsuario}`);
+
+//lo que prosigue es que el sistema contejara los datos ingresados con la base de datos y ene caso de que elos datos sean correctos comenzara la sesion en la plataforma actualizando estos valores
+
+//  Dado que Jonathan es del genero Masculino, y denota que su estatus de relacion no ha sido capturado o los mantiene privado esto genera la actualizacion de los valores de las variables
+
+generoUsuario="M"
+estatusRelacionSentimental=null
+
+console.log(`El usu`)
