@@ -247,3 +247,44 @@ console.log(`Los datos del producto son: \n
      const Venta = Object.assign(Producto, Pedido);
      console.log("Consultamos este nuevo objeto VENTA")
      console.table(Venta);
+
+     //Union de Objetos usando SPREAD para evitar la perdidad de informacion con objetos que comparten el mismo nombre en sus propiedades 
+
+
+    console.log("%c11.Union de Objetos usando el SPREAD OPERATOR(...)",style_console);
+
+    //pARCHAMOS EL ERROR ,REINOICANDO EL VALOR DEL PRODUCTO ID al original producto.ID=100;
+
+    console.table(Producto)
+    console.table(Comprador)
+    console.table(Pedido)
+
+    const Venta2 =
+    {
+    producto: {...Producto},
+    comprador: {...Comprador},
+    pedido: {...Pedido}
+    }
+    console.log("Funcionamos los 3 objetos en uno nuevo,sin perdida de informacion")
+    console.log(Venta2)
+    console.table(Venta2)
+
+    console.log("%c12.Mutabilidad POST Union de Objetos ",style_console);
+    //vamos a verificar el estatus de mutabilidad de los objetos 
+    console.log("Vamos a verificar el estatus de muytabilidad del objeto PEDIDO")
+    console.log(`Esta el objeto de Pedido congelado ? :${Object.isFrozen(Pedido)}`)
+    console.log(`Esta el objeto de Pedido sellado ? :${Object.isSealed(Pedido)}`)
+
+    
+    console.log("Vamos a verificar el estatus de muytabilidad del objeto COMPRADOR")
+    console.log(`Esta el objeto de Pedido congelado ? :${Object.isFrozen(Comprador)}`)
+    console.log(`Esta el objeto de Pedido sellado ? :${Object.isSealed(Comprador)}`)
+
+    console.log("Vamos a verificar el estatus de muytabilidad del objeto PRODUCTO")
+    console.log(`Esta el objeto de Pedido congelado ? :${Object.isFrozen(Producto)}`)
+    console.log(`Esta el objeto de Pedido sellado ? :${Object.isSealed(Producto)}`)
+
+    //Modificamos la estrtuctura de productos,agregando una nueva propiedad
+    Producto[`isLegacy` ]=false;
+    console.log(Producto)
+    console.log(Venta2)
