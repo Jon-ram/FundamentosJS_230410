@@ -11,8 +11,7 @@ previa a iniciar el desarrollo de software para web utilizando el framework de M
 |1.|Metodologia de Evaluacion| ✅Finalizada|
 |2.|Inicializacion del Proyecto de Fundamentos de JS [8 Firmas]| ✅Finalizada|
 |3.|Ejercicio 01:Declaracion de variables JS [Pendiente]|✅Finalizada |
-|4.|Ejercicio 02:Declaracion de variables JS (undefined/Boolean/Number/String//Bigint/Symbol/Null/Function) [Pendiente]|Activa |+
-|4.|Ejercicio 02: Declaración de Variables en JS(String/BigInt/Symbol/Null/Function)|6| ✅Finalizada|
+|4.|Ejercicio 02:Declaracion de variables JS (undefined/Boolean/Number/String//Bigint/Symbol/Null/Function) [6]|✅Finalizada |+
 |5.|Ejercicio 03: Objetos |19| ✅Finalizada|
 |6.|Ejercicio 04: Arreglos|18| ⭐Activa|
 
