@@ -19,7 +19,7 @@ previa a iniciar el desarrollo de software para web utilizando el framework de M
 
 
 ### Autor
-Jonathan Baldemar Ramirez Reyes
-unidad 1
-Aplicaciones Web Orientadas a Servicios
+Jonathan Baldemar Ramirez Reyes<br>
+unidad <br>
+Aplicaciones Web Orientadas a Servicios<br>
 Septiembre 2024
