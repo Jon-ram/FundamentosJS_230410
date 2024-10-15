@@ -35,5 +35,7 @@ if(fechaActual.getHours()<12)
 if(fechaActual.getMonth()<=6)
     console.log(`Esta es la primera mitad del año.`);
 else
-    console.log(`Esta es la s¿egunda mitad del año.`);
+    console.log(`Esta es la s¿egunda mitad del año .`);
+
+
 
